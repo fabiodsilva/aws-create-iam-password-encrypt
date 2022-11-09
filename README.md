@@ -1,3 +1,8 @@
+## Description
+
+These terraform scripts create the users on AWS IAM with encrypted password using keybase.
+
+
 ## Create users
 In our example we will create 3 users
 ```hcl
