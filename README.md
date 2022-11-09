@@ -55,12 +55,12 @@ Apply complete! Resources: 21 added, 0 changed, 0 destroyed.
 -rw-r--r-- 1 root 0 Nov  9 13:38 /tmp/terraform-apply-2022-11-09_13:38.log
 ```
 
-Now you can see a created users
+Now you can see all created users
  
  ![image](https://user-images.githubusercontent.com/25347806/200847049-94f33001-2637-4e5a-857d-2beecd7938b9.png)
 
 
-Each user has a file with yours encrypted passwords.
+Each user has a file with it encrypted passwords.
 ```hcl
 
 # ls -la encrypted_password.user*
@@ -68,7 +68,9 @@ Each user has a file with yours encrypted passwords.
 -rw------- 1 root root 800 Nov  9 12:59 encrypted_password.user2.txt
 -rw------- 1 root root 800 Nov  9 12:59 encrypted_password.user3.txt
 ```
+
 ```hcl
+
 cat encrypted_password.user1.txt
 wcFMA2ouMlgKWijzAQ/6A1iXm7s92qxjArMX0GvuavkPK0tGaWqenBpZ09WrtbU1FomEWzb7GfbZ6zSP00uyWneOZWx/oVPHPQsgnyGfgk/SLwCH1TSYuY5a/+GIKwEw9cQwfE9bbXE5X03TM4ECygO5X294KbwGtvyfguFOlsxst2CrdsQl2feb3RDxau0O1yhnMFiV
 0v7HeWPyCTbFV546mkpkbYGH2tASZssYWigpf7wNjkIX/51PNwO56fWYm+8S90kas7bVSVCtXOVPKio/ephnZeINqS97xdCJRmklY0KFt0nz3axwhCNGV4+hh7GkGY1ejRbf3OdxAVo61Y0sI0xoTGdUQ6pkU1MLBnsas2ZOUr9EIBDWbu5ktiXn65v2UITGyVPq0DCr0
@@ -76,7 +78,7 @@ wcFMA2ouMlgKWijzAQ/6A1iXm7s92qxjArMX0GvuavkPK0tGaWqenBpZ09WrtbU1FomEWzb7GfbZ6zSP
 UUHG4TTDtMAWOJEMzL1JxnSB5hH9Oar/vbnKwz4za5gOojXEPEIz7KEstueJ6kWOFIG2sIqn2yxoT9iu1287nSRQGQRjHTptDQFH1GZlNKnX0oqS47gG9Y0qOCshmrUMIBf8j/R+s1CPPfpFFfz82QK6aIvVfoUodg+Wmus6hNxYLc4ptfxA==
 ```
 
-And after that you execute ./decryptpass.sh and cat password.txt. you can see a password for users.
+And after that you execute ./decryptpass.sh and cat password.txt. you can see the user's passwords.
 ```hcl
 
 # cat password.txt
@@ -89,7 +91,7 @@ user3    ;    *{ZQ}4D6Cg&g^A|))$]
 
 ## Exclude users
 
-#./tfd.sh -> it will execute all users.
+#./tfd.sh -> it will exclude all users.
 
 
 # Requirements
