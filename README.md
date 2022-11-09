@@ -1,3 +1,4 @@
+## Create users
 In our example we will create 3 users
 ```hcl
 
@@ -25,7 +26,7 @@ you need a account on https://keybase.io/.
 If you need more informations about keybase take a look this vídeo, help me a lot -> https://www.youtube.com/watch?v=np4zD_F_dPc
 
 
-Execute a ./user-add.sh, and after that execute the ./tfa.sh to create a users on AWS.
+Execute a ./user-add.sh, and after that execute the ./tfa.sh to create the users on AWS.
 ```hcl
 
 # ./user-add.sh
@@ -35,7 +36,7 @@ Processed: user3
 ```
 ```hcl
 
-[root@ip-172-31-86-48 terraform-aws-iam-keybase]# ./tfa.sh
+# ./tfa.sh
 Processed: user1
 Processed: user2
 Processed: user3
@@ -51,7 +52,7 @@ data.aws_iam_policy.AdministratorAccess: Read complete after 1s [id=arn:aws:iam:
 .
 .
 Apply complete! Resources: 21 added, 0 changed, 0 destroyed.
--rw-r--r-- 1 root root 0 Nov  9 13:38 /tmp/terraform-apply-2022-11-09_13:38.log
+-rw-r--r-- 1 root 0 Nov  9 13:38 /tmp/terraform-apply-2022-11-09_13:38.log
 ```
 
 Now you can see a created users
@@ -68,7 +69,7 @@ Each user has a file with yours encrypted passwords.
 -rw------- 1 root root 800 Nov  9 12:59 encrypted_password.user3.txt
 ```
 ```hcl
-more encrypted_password.user1.txt
+cat encrypted_password.user1.txt
 wcFMA2ouMlgKWijzAQ/6A1iXm7s92qxjArMX0GvuavkPK0tGaWqenBpZ09WrtbU1FomEWzb7GfbZ6zSP00uyWneOZWx/oVPHPQsgnyGfgk/SLwCH1TSYuY5a/+GIKwEw9cQwfE9bbXE5X03TM4ECygO5X294KbwGtvyfguFOlsxst2CrdsQl2feb3RDxau0O1yhnMFiV
 0v7HeWPyCTbFV546mkpkbYGH2tASZssYWigpf7wNjkIX/51PNwO56fWYm+8S90kas7bVSVCtXOVPKio/ephnZeINqS97xdCJRmklY0KFt0nz3axwhCNGV4+hh7GkGY1ejRbf3OdxAVo61Y0sI0xoTGdUQ6pkU1MLBnsas2ZOUr9EIBDWbu5ktiXn65v2UITGyVPq0DCr0
 +LOAdy9jfdFseb1YAFVyKaBR+LhIuXTICCTRUPh4qo5yKayuFPWzNr4Hpbpdwp2NnsOlRZ/EVLlrNHMZ4sbotu4wwQsmb8u+LY8m7eCc1iHRWmP3EC/8U5FHVc3wJO+EPG0qvXZsU3/jUGbLMJ/eeGccp/HxsujJGU48W2ClYjpjDdQiDRZxflNR5l+qEhpeemxddgl2H
@@ -86,7 +87,12 @@ user3    ;    *{ZQ}4D6Cg&g^A|))$]
 ```
 
 
-## Requirements
+## Exclude users
+
+#./tfd.sh -> it will execute all users.
+
+
+# Requirements
 | Name | Version |
 | ---- | ------- |
 | aws | ~> 2.8.3 |
