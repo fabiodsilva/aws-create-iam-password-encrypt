@@ -1,4 +1,4 @@
 #aws_account,keybase_account,group
-user1,fabiodsilva,administrators
-user2,fabiodsilva,developers
-user3,fabiodsilva,console_users
+user1,<keybase user>,administrators
+user2, <keybase user>,developers
+user3, <keybase user>,console_users
