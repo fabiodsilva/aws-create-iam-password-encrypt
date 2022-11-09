@@ -67,6 +67,13 @@ Each user has a file with yours encrypt password.
 -rw------- 1 root root 800 Nov  9 12:59 encrypted_password.user2.txt
 -rw------- 1 root root 800 Nov  9 12:59 encrypted_password.user3.txt
 ```
+```hcl
+more encrypted_password.user1.txt
+wcFMA2ouMlgKWijzAQ/6A1iXm7s92qxjArMX0GvuavkPK0tGaWqenBpZ09WrtbU1FomEWzb7GfbZ6zSP00uyWneOZWx/oVPHPQsgnyGfgk/SLwCH1TSYuY5a/+GIKwEw9cQwfE9bbXE5X03TM4ECygO5X294KbwGtvyfguFOlsxst2CrdsQl2feb3RDxau0O1yhnMFiV
+0v7HeWPyCTbFV546mkpkbYGH2tASZssYWigpf7wNjkIX/51PNwO56fWYm+8S90kas7bVSVCtXOVPKio/ephnZeINqS97xdCJRmklY0KFt0nz3axwhCNGV4+hh7GkGY1ejRbf3OdxAVo61Y0sI0xoTGdUQ6pkU1MLBnsas2ZOUr9EIBDWbu5ktiXn65v2UITGyVPq0DCr0
++LOAdy9jfdFseb1YAFVyKaBR+LhIuXTICCTRUPh4qo5yKayuFPWzNr4Hpbpdwp2NnsOlRZ/EVLlrNHMZ4sbotu4wwQsmb8u+LY8m7eCc1iHRWmP3EC/8U5FHVc3wJO+EPG0qvXZsU3/jUGbLMJ/eeGccp/HxsujJGU48W2ClYjpjDdQiDRZxflNR5l+qEhpeemxddgl2H
+UUHG4TTDtMAWOJEMzL1JxnSB5hH9Oar/vbnKwz4za5gOojXEPEIz7KEstueJ6kWOFIG2sIqn2yxoT9iu1287nSRQGQRjHTptDQFH1GZlNKnX0oqS47gG9Y0qOCshmrUMIBf8j/R+s1CPPfpFFfz82QK6aIvVfoUodg+Wmus6hNxYLc4ptfxA==
+```
 
 And after that you execute ./decryptpass.sh and cat password.txt. you can see a password for users.
 ```hcl
