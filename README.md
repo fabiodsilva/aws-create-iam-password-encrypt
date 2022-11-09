@@ -59,7 +59,7 @@ Now you can see a created users
  ![image](https://user-images.githubusercontent.com/25347806/200847049-94f33001-2637-4e5a-857d-2beecd7938b9.png)
 
 
-Each user has a file with yours encrypt password.
+Each user has a file with yours encrypted passwords.
 ```hcl
 
 # ls -la encrypted_password.user*
