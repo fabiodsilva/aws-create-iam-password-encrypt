@@ -1,0 +1,4 @@
+#aws_account,keybase_account,group
+user1,fabiodsilva,administrators
+user2,fabiodsilva,developers
+user3,fabiodsilva,console_users
